@@ -1,3 +1,6 @@
+Yep, here’s your **full old code with the GD Lite button added**:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +49,40 @@
         .search-bar:focus {
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.25);
         }
+
+        /* GD Lite Button */
+        .game-button {
+            margin-top: 30px;
+            width: 180px;
+            height: 180px;
+            background: #111;
+            border: 2px solid white;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            overflow: hidden;
+        }
+
+        .game-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .game-button img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 15px;
+            display: block;
+            margin: 10px auto 5px;
+        }
+
+        .game-button span {
+            display: block;
+        }
     </style>
 </head>
 
@@ -61,5 +98,18 @@
         >
     </div>
 
+    <a href="e" style="text-decoration: none;">
+        <button class="game-button">
+            <img
+                src="https://geometrydash-lite.org/data/image/game/geometry-dash-lite/geometry-dash-lite.jpeg"
+                alt="Geometry Dash Lite"
+            >
+            <span>GD Lite</span>
+        </button>
+    </a>
+
 </body>
 </html>
+```
+
+Replace `YOUR-GD-LITE-LINK-HERE` with the link you want the **GD Lite** button to open.
